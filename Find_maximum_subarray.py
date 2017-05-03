@@ -36,6 +36,6 @@ def find_maximum_subarray(A, low, high):
     else:
         return cross_max, cross_low, cross_high
 
-
-A = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
-print(find_maximum_subarray(A, 0, 15))
+if __name__ == '__main__':
+    A = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+    print(find_maximum_subarray(A, 0, 15))
