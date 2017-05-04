@@ -1,7 +1,5 @@
 import random
-a = [x for x in range(10)]
-random.shuffle(a)
-print(a)
+
 
 def insertion_sort(a):
     for i in range(1, len(a)):
@@ -11,5 +9,9 @@ def insertion_sort(a):
             i -= 1
         a[i] = key
 
-insertion_sort(a)
-print(a)
+if __name__ == '__main__':
+    a = [x for x in range(10)]
+    random.shuffle(a)
+    print(a)
+    insertion_sort(a)
+    print(a)
